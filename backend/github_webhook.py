@@ -1,7 +1,9 @@
+import requests
+
 def handle_github_event(payload: dict):
-    # For now, just log what arrived
-    event = payload.get("action", "unknown")
-    return {
-        "message": "Webhook received",
-        "action": event
-    }
+    print("🔥 Webhook received")
+
+    action = payload.get("action")
+    print("Action:", action)
+
+    return {"ok": True}
