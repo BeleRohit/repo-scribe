@@ -1,0 +1,7 @@
+{
+  "action": "opened",
+  "pull_request": {
+    "title": "Add new pipeline step",
+    "body": "Added normalization stage"
+  }
+}
